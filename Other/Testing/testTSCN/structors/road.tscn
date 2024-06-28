@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://c0whrpu51yone"]
+
+[ext_resource type="Script" path="res://Managers/Sub Managers/BuildingObject.gd" id="1_xanjv"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b1amn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3gwq7"]
+albedo_color = Color(0.286275, 0.286275, 0.286275, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_psti6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_58sfa"]
+
+[node name="road" type="Node3D" groups=["building"]]
+script = ExtResource("1_xanjv")
+StoneCost = 5
+SpawnActor = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["building"]]
+collision_layer = 8
+collision_mask = 8
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 0.025, 0, 1.50996e-07, 0, -1, 2.08165e-12, -0.02, 2.08165e-12)
+mesh = SubResource("BoxMesh_b1amn")
+surface_material_override/0 = SubResource("StandardMaterial3D_3gwq7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0.474275, 0)
+shape = SubResource("BoxShape3D_psti6")
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, -0.136379, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.623813, 0)
+shape = SubResource("BoxShape3D_58sfa")
+
+[node name="SpawnPoint" type="Marker3D" parent="StaticBody3D"]
+transform = Transform3D(52.2961, 0, 0, 0, 45.3512, 0, 0, 0, 46.9719, 0, 0.299456, -0.015183)

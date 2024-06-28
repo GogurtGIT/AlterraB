@@ -1,0 +1,335 @@
+[gd_scene load_steps=2 format=3 uid="uid://v4jodx8hyw47"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_qxo7c"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="lowerTiles" type="Node" parent="."]
+
+[node name="chunkOne" type="Node" parent="lowerTiles"]
+
+[node name="lowerTile1" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00869, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile2" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00869, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile3" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00869, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile4" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00869, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile5" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00869, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile6" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00869, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile14" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 7.00869, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile15" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 7.00869, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile16" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 7.00869, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile7" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00869, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile8" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00869, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile9" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00869, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile10" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00869, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile11" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00869, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile12" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00869, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile13" type="MeshInstance3D" parent="lowerTiles/chunkOne"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 7.00869, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="chunkOne2" type="Node" parent="lowerTiles"]
+
+[node name="lowerTile1" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile2" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile3" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile4" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile5" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile6" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile14" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -0.995231, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile15" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -0.995231, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile16" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -0.995231, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile7" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile8" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile9" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, -5.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile10" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, -3.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile11" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, -1.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile12" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile13" type="MeshInstance3D" parent="lowerTiles/chunkOne2"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -0.995231, 0.12, -7.02029)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="chunkOne3" type="Node" parent="lowerTiles"]
+
+[node name="lowerTile1" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile2" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile3" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile4" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile5" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile6" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile14" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -0.995231, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile15" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -0.995231, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile16" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -0.995231, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile7" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -4.99523, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile8" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, -2.99523, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile9" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile10" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile11" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile12" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -6.99523, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile13" type="MeshInstance3D" parent="lowerTiles/chunkOne3"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, -0.995231, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="chunkOne4" type="Node" parent="lowerTiles"]
+
+[node name="lowerTile1" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00445, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile2" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00445, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile3" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00445, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile4" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00445, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile5" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00445, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile6" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00445, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile14" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 7.00445, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile15" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 7.00445, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile16" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 7.00445, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile7" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 3.00445, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile8" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(2, 0, 0, 0, 0.25, 0, 0, 0, 2, 5.00445, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile9" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00445, 0.12, 2.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile10" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00445, 0.12, 4.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile11" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00445, 0.12, 6.93533)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile12" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 1.00445, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")
+
+[node name="lowerTile13" type="MeshInstance3D" parent="lowerTiles/chunkOne4"]
+transform = Transform3D(-8.74228e-08, 0, -2, 0, 0.25, 0, 2, 0, -8.74228e-08, 7.00445, 0.12, 0.935335)
+mesh = SubResource("BoxMesh_qxo7c")
+skeleton = NodePath("../..")

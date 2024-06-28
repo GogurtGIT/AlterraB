@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvtl28bdr84dn"]
+
+[ext_resource type="Script" path="res://Managers/Sub Managers/BuildingObject.gd" id="1_5qswr"]
+[ext_resource type="PackedScene" uid="uid://bd2bmls1tlxk0" path="res://Scenes/baseNPC/ironMiner.tscn" id="2_adgic"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b1amn"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5x5cn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_psti6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0muhf"]
+
+[node name="lumber_hut" type="Node3D" groups=["building"]]
+script = ExtResource("1_5qswr")
+WoodCost = 20
+StoneCost = 10
+PopCost = 1
+Actor = ExtResource("2_adgic")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["building"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.130604, 0)
+collision_layer = 2
+collision_mask = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -0.074173, 0, 0, 0, 1, 0, 0.165344, 0)
+mesh = SubResource("BoxMesh_b1amn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/MeshInstance3D"]
+transform = Transform3D(0.739895, -0.671216, 0.000471519, 0.397833, 1.24663, 0.0175604, -0.0152032, -0.044718, 0.482462, -0.0174293, -0.877224, 0)
+mesh = SubResource("BoxMesh_5x5cn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0.625074, 0)
+shape = SubResource("BoxShape3D_psti6")
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.623813, 0)
+shape = SubResource("BoxShape3D_0muhf")
+
+[node name="SpawnPoint" type="Marker3D" parent="StaticBody3D"]
+transform = Transform3D(52.2961, 0, 0, 0, 45.3512, 0, 0, 0, 46.9719, 0, 0.299456, 0.583711)

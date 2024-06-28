@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bqcjrav10u4w7"]
+
+[ext_resource type="Script" path="res://Managers/Sub Managers/BuildingObject.gd" id="1_fco57"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b1amn"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8h57h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_psti6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b4saj"]
+
+[node name="lumber_hut" type="Node3D" groups=["building"]]
+script = ExtResource("1_fco57")
+WoodCost = 20
+StoneCost = 10
+SpawnActor = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["building"]]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -0.074173, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = SubResource("BoxMesh_b1amn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/MeshInstance3D"]
+transform = Transform3D(0.689831, 0.0415304, -6.84637e-06, -0.00304864, 9.39731, -0.00013596, 5.04851e-06, 0.00149772, 0.853263, 0.00281905, -9.01146, 0.00588433)
+mesh = SubResource("CylinderMesh_8h57h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0.625074, 0)
+shape = SubResource("BoxShape3D_psti6")
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.623813, 0)
+shape = SubResource("BoxShape3D_b4saj")
+
+[node name="SpawnPoint" type="Marker3D" parent="StaticBody3D"]
+transform = Transform3D(52.2961, 0, 0, 0, 45.3512, 0, 0, 0, 46.9719, 0, 0.299456, 0.583711)

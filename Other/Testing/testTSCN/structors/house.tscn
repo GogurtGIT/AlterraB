@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://dyf153lme1wo8"]
+
+[ext_resource type="Script" path="res://Managers/Sub Managers/BuildingObject.gd" id="1_mhwmr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hep85"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21y3o"]
+albedo_color = Color(0.309804, 0.172549, 0.172549, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_c0uc2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_leku0"]
+albedo_color = Color(0.819608, 0.831373, 0.576471, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ipc4x"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8l2hn"]
+
+[node name="testHut" type="Node3D" groups=["building"]]
+script = ExtResource("1_mhwmr")
+WoodCost = 10
+SpawnActor = false
+IncPopCap = true
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["building"]]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(0.848996, 0, 0, 0, -0.649631, 0, 0, 0, 1, 2.08165e-12, 0.339391, 2.08165e-12)
+mesh = SubResource("BoxMesh_hep85")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_21y3o")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="StaticBody3D/MeshInstance3D"]
+transform = Transform3D(1.1051, 0, 0, 0, -0.364777, 0, 0, 0, 1, 0, -0.677625, 0)
+mesh = SubResource("PrismMesh_c0uc2")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_leku0")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-0.5, 0, -7.54979e-08, 0, 0.5, 0, 7.54979e-08, 0, -0.5, 0, 0.488633, 0)
+shape = SubResource("BoxShape3D_ipc4x")
+
+[node name="SpawnPoint" type="Marker3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.00154)
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+transform = Transform3D(0.8, 0, 1.20797e-07, 0, 0.8, 0, -1.20797e-07, 0, 0.8, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0.623813, 0)
+shape = SubResource("BoxShape3D_8l2hn")

@@ -1,0 +1,528 @@
+[gd_scene load_steps=28 format=3 uid="uid://dukxg86y2u2m0"]
+
+[ext_resource type="Script" path="res://Other/Testing/testGD/playerCamera.gd" id="1_p0akc"]
+[ext_resource type="Script" path="res://Managers/InterfaceManager.gd" id="2_jmjxv"]
+[ext_resource type="Script" path="res://Managers/Sub Managers/followMouse.gd" id="3_eovgh"]
+[ext_resource type="Texture2D" uid="uid://dkdt5qkkwc8ed" path="res://Other/does-anybody-remember-this-stream-where-it-he-stared-into-v0-xtv1htp2f2v91.webp" id="4_2776l"]
+[ext_resource type="Texture2D" uid="uid://bybrpuo6380sv" path="res://Assets/Images/cat 3.png" id="6_fxpda"]
+[ext_resource type="PackedScene" uid="uid://cdmtqmeaf7dbl" path="res://Other/Testing/testTSCN/structors/HQ.tscn" id="7_jgv0f"]
+[ext_resource type="AudioStream" uid="uid://dlhbyuu3k3jb8" path="res://Sounds/411080__shortiefoeva2__peaceful-hip-hop.mp3" id="8_j7t3h"]
+[ext_resource type="AudioStream" uid="uid://difdjdydyidv2" path="res://Sounds/464408__michael_grinnell__drawer_open_whoosh.wav" id="9_p18pk"]
+[ext_resource type="AudioStream" uid="uid://c3qn7cls31nhj" path="res://Sounds/343097__edsward__plopenhanced.wav" id="10_7lo4w"]
+[ext_resource type="AudioStream" uid="uid://c4suueqwyruaf" path="res://Sounds/541623__erokia__slow-synth-sounds-cc0-msfxp9-55_5_2.wav" id="11_icxn4"]
+[ext_resource type="AudioStream" uid="uid://cg1yuqlvygaom" path="res://Sounds/679053__migfus20__relaxing-chiptune-music.mp3" id="12_4g1v3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2ydvd"]
+
+[sub_resource type="Sky" id="Sky_snk56"]
+sky_material = SubResource("ShaderMaterial_2ydvd")
+
+[sub_resource type="Environment" id="Environment_ve2c8"]
+sky = SubResource("Sky_snk56")
+ambient_light_color = Color(0.909804, 0.909804, 0.909804, 1)
+fog_enabled = true
+fog_light_color = Color(0.682353, 0.741176, 0.729412, 1)
+volumetric_fog_density = 0.01
+volumetric_fog_albedo = Color(0.980392, 0.980392, 0.780392, 1)
+volumetric_fog_emission = Color(0.788235, 0.788235, 0.788235, 1)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pu0dt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2i4iv"]
+size = Vector2(1151, 75.6163)
+
+[sub_resource type="Theme" id="Theme_c5rod"]
+
+[sub_resource type="Theme" id="Theme_fj6ak"]
+
+[sub_resource type="Theme" id="Theme_48k04"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_3unft"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tcpop"]
+albedo_color = Color(0, 0.215686, 0.054902, 1)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_r43cf"]
+vertices = PackedVector3Array(-15.557, 0.262664, 7.75, -15.557, 0.262664, 15.5, -7.80698, 0.262664, 15.5, -7.80698, 0.262664, -15.5, -15.557, 0.262664, -15.5, -15.557, 0.262664, -7.75, 7.69302, 0.262664, 15.5, 15.693, 0.262664, 15.5, 15.693, 0.262664, 7.75, 15.693, 0.262664, -7.75, 15.693, 0.262664, -15.5, 7.69302, 0.262664, -15.5, -15.557, 0.262664, 0, -15.557, 0.262664, 7.75, -7.80698, 0.262664, 15.5, -0.0569801, 0.262664, 15.5, -0.0569801, 0.262664, -15.5, -7.80698, 0.262664, -15.5, -15.557, 0.262664, -7.75, -15.557, 0.262664, 0, 7.69302, 0.262664, 15.5, 15.693, 0.262664, 7.75, 15.693, 0.262664, 0, 15.693, 0.262664, 0, 15.693, 0.262664, -7.75, 7.69302, 0.262664, -15.5, -0.0569801, 0.262664, -15.5, -15.557, 0.262664, 0, -0.0569801, 0.262664, 15.5, 7.69302, 0.262664, 15.5, 15.693, 0.262664, 0, 7.69302, 0.262664, -15.5)
+polygons = [PackedInt32Array(2, 1, 0), PackedInt32Array(5, 4, 3), PackedInt32Array(8, 7, 6), PackedInt32Array(11, 10, 9), PackedInt32Array(13, 12, 14), PackedInt32Array(14, 12, 15), PackedInt32Array(17, 16, 18), PackedInt32Array(18, 16, 19), PackedInt32Array(22, 21, 20), PackedInt32Array(25, 24, 23), PackedInt32Array(31, 30, 26), PackedInt32Array(26, 30, 29), PackedInt32Array(26, 29, 28), PackedInt32Array(26, 28, 27)]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_a8ml8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_04ta5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pjfms"]
+albedo_color = Color(0.392157, 0.576471, 0.32549, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_rwuhy"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yh4g4"]
+
+[node name="MAIN" type="Node3D"]
+
+[node name="permStruct" type="Node" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="permStruct"]
+environment = SubResource("Environment_ve2c8")
+
+[node name="sun" type="DirectionalLight3D" parent="permStruct/WorldEnvironment"]
+transform = Transform3D(1, -6.97574e-16, -1.5246e-23, -1.5246e-23, -4.37114e-08, 1, -6.97574e-16, -1, -4.37114e-08, 0, 32.4691, 0)
+shadow_enabled = true
+
+[node name="cameraAnchor" type="Node3D" parent="permStruct"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.07807, 0)
+script = ExtResource("1_p0akc")
+
+[node name="playerCamera" type="Camera3D" parent="permStruct/cameraAnchor"]
+transform = Transform3D(1, -5.95416e-16, 2.46629e-16, 2.4663e-16, 0.707107, 0.707107, -5.95416e-16, -0.707107, 0.707107, 2.08165e-12, 17, 17.5)
+projection = 1
+size = 33.0
+near = 0.01
+
+[node name="UI" type="Node" parent="permStruct"]
+
+[node name="followMouse" type="Area2D" parent="permStruct/UI"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+script = ExtResource("3_eovgh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="permStruct/UI/followMouse"]
+position = Vector2(2.08165e-12, 2.08165e-12)
+shape = SubResource("CircleShape2D_pu0dt")
+
+[node name="Control" type="Control" parent="permStruct/UI"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -577.0
+offset_top = -69.0
+offset_right = 576.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+script = ExtResource("2_jmjxv")
+
+[node name="Panel2" type="Panel" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = -10.0
+offset_top = -587.0
+offset_right = 134.0
+offset_bottom = -251.0
+scale = Vector2(8.19745, 0.175263)
+
+[node name="Panel" type="Panel" parent="permStruct/UI/Control"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -21.0
+offset_top = -129.0
+offset_right = -21.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.2, 1.88)
+
+[node name="Area2D" type="Area2D" parent="permStruct/UI/Control"]
+position = Vector2(56, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="permStruct/UI/Control/Area2D"]
+position = Vector2(522, 6.03003)
+scale = Vector2(1, 1.72)
+shape = SubResource("RectangleShape2D_2i4iv")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="permStruct/UI/Control/Area2D"]
+position = Vector2(16, -272)
+scale = Vector2(0.326172, 9.48828)
+shape = SubResource("RectangleShape2D_2i4iv")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="permStruct/UI/Control/Area2D"]
+position = Vector2(525, -570)
+scale = Vector2(0.766172, 1.64828)
+shape = SubResource("RectangleShape2D_2i4iv")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="permStruct/UI/Control/Area2D"]
+position = Vector2(1027, -271)
+scale = Vector2(0.326172, 9.48828)
+shape = SubResource("RectangleShape2D_2i4iv")
+
+[node name="showWood" type="Label" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 866.0
+offset_top = -579.0
+offset_right = 920.0
+offset_bottom = -553.0
+text = "Wood: "
+
+[node name="woodValue" type="Label" parent="permStruct/UI/Control/showWood"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 16.0
+offset_right = 44.0
+offset_bottom = 42.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="showPop" type="Label" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -581.0
+offset_right = 97.0
+offset_bottom = -555.0
+text = "Workforce: "
+
+[node name="popValue" type="Label" parent="permStruct/UI/Control/showPop"]
+layout_mode = 0
+offset_left = 99.0
+offset_right = 139.0
+offset_bottom = 26.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="showPop2" type="Label" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = -562.0
+offset_right = 97.0
+offset_bottom = -536.0
+text = "Population: "
+
+[node name="popValue2" type="Label" parent="permStruct/UI/Control/showPop2"]
+layout_mode = 0
+offset_left = 99.0
+offset_right = 139.0
+offset_bottom = 26.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="showStone" type="Label" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 947.0
+offset_top = -579.0
+offset_right = 1001.0
+offset_bottom = -553.0
+text = "Stone: "
+
+[node name="stoneValue" type="Label" parent="permStruct/UI/Control/showStone"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 16.0
+offset_right = 49.0
+offset_bottom = 42.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="showFood" type="Label" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 1098.0
+offset_top = -578.0
+offset_right = 1152.0
+offset_bottom = -552.0
+text = "Food: "
+
+[node name="foodValue" type="Label" parent="permStruct/UI/Control/showFood"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 15.0
+offset_right = 41.0
+offset_bottom = 41.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="showIron" type="Label" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 1025.0
+offset_top = -579.0
+offset_right = 1079.0
+offset_bottom = -553.0
+text = "Iron: "
+
+[node name="ironValue" type="Label" parent="permStruct/UI/Control/showIron"]
+layout_mode = 0
+offset_top = 15.0
+offset_right = 40.0
+offset_bottom = 41.0
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TabContainer" type="TabContainer" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 148.0
+offset_top = -55.0
+offset_right = 1071.0
+offset_bottom = 68.0
+scale = Vector2(0.858084, 0.960001)
+theme = SubResource("Theme_c5rod")
+theme_override_constants/side_margin = 0
+theme_override_constants/outline_size = 0
+
+[node name="Industry" type="HBoxContainer" parent="permStruct/UI/Control/TabContainer"]
+custom_minimum_size = Vector2(120, 75)
+layout_direction = 2
+layout_mode = 2
+theme = SubResource("Theme_fj6ak")
+theme_override_constants/separation = 4
+
+[node name="spawnStock" type="Button" parent="permStruct/UI/Control/TabContainer/Industry"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Stockpile
+1 Iron"
+
+[node name="spawnLumby" type="Button" parent="permStruct/UI/Control/TabContainer/Industry"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Lumberjack
+5 Wood"
+
+[node name="spawnMiner" type="Button" parent="permStruct/UI/Control/TabContainer/Industry"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Stone Miner
+10 Wood"
+
+[node name="spawnIronMiner2" type="Button" parent="permStruct/UI/Control/TabContainer/Industry"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Iron Miner
+20 Wood 
+10 Stone"
+
+[node name="Defenses" type="HBoxContainer" parent="permStruct/UI/Control/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="spawnWall" type="Button" parent="permStruct/UI/Control/TabContainer/Defenses"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Wall
+20 Stone
+5 Iron"
+
+[node name="spawnCorner" type="Button" parent="permStruct/UI/Control/TabContainer/Defenses"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Corner Wall
+20 Stone
+5 Iron"
+
+[node name="Food" type="HBoxContainer" parent="permStruct/UI/Control/TabContainer"]
+visible = false
+layout_mode = 2
+theme = SubResource("Theme_48k04")
+
+[node name="spawnOrchad" type="Button" parent="permStruct/UI/Control/TabContainer/Food"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Orchard
+8 Wood"
+
+[node name="spawnGranarty" type="Button" parent="permStruct/UI/Control/TabContainer/Food"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Granary
+20 Wood
+10 Stone"
+
+[node name="Living" type="HBoxContainer" parent="permStruct/UI/Control/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="spawnHouse" type="Button" parent="permStruct/UI/Control/TabContainer/Living"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "House
+10 Wood"
+
+[node name="spawnRoad" type="Button" parent="permStruct/UI/Control/TabContainer/Living"]
+custom_minimum_size = Vector2(120, 2.08165e-12)
+layout_mode = 2
+text = "Road
+5 Stone"
+
+[node name="fightButton" type="Button" parent="permStruct/UI/Control"]
+visible = false
+layout_mode = 0
+offset_left = 954.0
+offset_top = -26.0
+offset_right = 1009.0
+offset_bottom = 5.0
+scale = Vector2(3.24, 2.83945)
+text = "FIGHT"
+
+[node name="Button" type="Button" parent="permStruct/UI/Control"]
+visibility_layer = 0
+layout_mode = 0
+offset_left = 1001.0
+offset_top = -45.0
+offset_right = 1009.0
+offset_bottom = -37.0
+scale = Vector2(19.1871, 13.0436)
+
+[node name="muhPop" type="Label" parent="permStruct/UI/Control"]
+visible = false
+layout_mode = 0
+offset_left = 460.0
+offset_top = -286.0
+offset_right = 682.0
+offset_bottom = -246.0
+theme_override_font_sizes/font_size = 27
+text = "NO POPULATION
+"
+
+[node name="Panel3" type="Panel" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 1006.0
+offset_top = -48.0
+offset_right = 1046.0
+offset_bottom = -8.0
+scale = Vector2(3.36, 0.520005)
+
+[node name="Label" type="Label" parent="permStruct/UI/Control"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = -52.0
+offset_right = 1138.0
+offset_bottom = -26.0
+text = "Destroy Building
+"
+
+[node name="Sea" type="MeshInstance3D" parent="permStruct"]
+transform = Transform3D(200, 0, 0, 0, 1, 0, 0, 0, 200, 0, -0.588396, 0)
+mesh = SubResource("BoxMesh_3unft")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_tcpop")
+
+[node name="Timer" type="Timer" parent="permStruct"]
+wait_time = 3.0
+autostart = true
+
+[node name="toBeNamed" type="Node" parent="."]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." groups=["NavMesh"]]
+navigation_mesh = SubResource("NavigationMesh_r43cf")
+
+[node name="staticBase" type="StaticBody3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.237336, 0)
+
+[node name="baseCollision" type="CollisionShape3D" parent="NavigationRegion3D/staticBase"]
+transform = Transform3D(32, 0, 0, 0, 32, 0, 0, 0, 32, 2.08165e-12, -15.75, 2.08165e-12)
+shape = SubResource("BoxShape3D_a8ml8")
+
+[node name="basePlate" type="MeshInstance3D" parent="NavigationRegion3D/staticBase"]
+transform = Transform3D(32, 0, 0, 0, 0.2, 0, 0, 0, 32, 2.08165e-12, 0.1, 2.08165e-12)
+mesh = SubResource("BoxMesh_04ta5")
+surface_material_override/0 = SubResource("StandardMaterial3D_pjfms")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D" groups=["tree"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3702, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/StaticBody3D"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 2.34593, 2.52119, 0)
+mesh = SubResource("CylinderMesh_rwuhy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 2.38663, 2.52119, 0)
+shape = SubResource("CylinderShape3D_yh4g4")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="NavigationRegion3D" groups=["stone"]]
+transform = Transform3D(1, 0, 0, 0, 0.0524832, 0, 0, 0, 1, 16.0254, 0, -4.75341)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/StaticBody3D4"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 2.34593, 2.52119, 0)
+mesh = SubResource("CylinderMesh_rwuhy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D4"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 2.38663, 2.52119, 0)
+shape = SubResource("CylinderShape3D_yh4g4")
+
+[node name="StaticBody3D5" type="StaticBody3D" parent="NavigationRegion3D" groups=["iron"]]
+transform = Transform3D(1, 0, 0, 0, 0.0750507, 0, 0, 0, 1, -20.5019, 0, -4.75341)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/StaticBody3D5"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 2.34593, 2.52119, 0)
+mesh = SubResource("CylinderMesh_rwuhy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D5"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 2.38663, 2.52119, 0)
+shape = SubResource("CylinderShape3D_yh4g4")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="NavigationRegion3D" groups=["tree"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.2289, 0, 6.48185)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/StaticBody3D2"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 0, 2.52119, 0)
+mesh = SubResource("CylinderMesh_rwuhy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D2"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 0, 2.52119, 0)
+shape = SubResource("CylinderShape3D_yh4g4")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="NavigationRegion3D" groups=["tree"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.8396, 0, -6.88893)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/StaticBody3D3"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 0, 2.52119, 0)
+mesh = SubResource("CylinderMesh_rwuhy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/StaticBody3D3"]
+transform = Transform3D(0.656157, 0, 0, 0, 2.45941, 0, 0, 0, 0.581584, 0, 2.52119, 0)
+shape = SubResource("CylinderShape3D_yh4g4")
+
+[node name="Does-anybody-remember-this-stream-where-it-he-stared-into-v0-xtv1Htp2f2v91" type="Sprite2D" parent="."]
+position = Vector2(81.4643, 582)
+scale = Vector2(0.241255, 0.204109)
+texture = ExtResource("4_2776l")
+
+[node name="Cat3" type="Sprite2D" parent="."]
+position = Vector2(1074, 597)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("6_fxpda")
+
+[node name="lumber_hut" parent="." instance=ExtResource("7_jgv0f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="sounds" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("8_j7t3h")
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("9_p18pk")
+
+[node name="xd" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("10_7lo4w")
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("11_icxn4")
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("12_4g1v3")
+
+[connection signal="area_entered" from="permStruct/UI/Control/Area2D" to="permStruct/UI/Control" method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="permStruct/UI/Control/Area2D" to="permStruct/UI/Control" method="_on_area_2d_area_exited"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Industry/spawnStock" to="permStruct/UI/Control" method="_on_spawn_stock_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Industry/spawnLumby" to="permStruct/UI/Control" method="_on_spawn_lumby_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Industry/spawnMiner" to="permStruct/UI/Control" method="_on_spawn_miner_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Industry/spawnIronMiner2" to="permStruct/UI/Control" method="_on_spawn_iron_miner_2_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Defenses/spawnWall" to="permStruct/UI/Control" method="_on_spawn_wall_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Defenses/spawnCorner" to="permStruct/UI/Control" method="_on_spawn_corner_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Food/spawnOrchad" to="permStruct/UI/Control" method="_on_spawn_orchad_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Food/spawnGranarty" to="permStruct/UI/Control" method="_on_spawn_granarty_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Living/spawnHouse" to="permStruct/UI/Control" method="_on_spawn_house_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/TabContainer/Living/spawnRoad" to="permStruct/UI/Control" method="_on_spawn_road_button_down"]
+[connection signal="button_down" from="permStruct/UI/Control/Button" to="permStruct/UI/Control" method="_on_button_button_down"]
+[connection signal="finished" from="sounds/AudioStreamPlayer" to="permStruct/UI/Control" method="_on_audio_stream_player_finished"]
+[connection signal="finished" from="sounds/AudioStreamPlayer3" to="permStruct/UI/Control" method="_on_audio_stream_player_3_finished"]
+[connection signal="finished" from="sounds/AudioStreamPlayer4" to="permStruct/UI/Control" method="_on_audio_stream_player_4_finished"]

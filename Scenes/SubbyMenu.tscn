@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxeevt6mq56q2"]
+
+[ext_resource type="Script" path="res://Scenes/SubbyMenu.gd" id="1_vgqkl"]
+[ext_resource type="AudioStream" uid="uid://bqo455o2ewplh" path="res://Sounds/622324__kevp888__cd_plenitude_004_exp01.wav" id="3_3t6fy"]
+[ext_resource type="AudioStream" uid="uid://c2htqixdrstdv" path="res://Sounds/320181__dland__hint.wav" id="4_c8h56"]
+[ext_resource type="Texture2D" uid="uid://2heqfjmifdx8" path="res://Scenes/tutScreen.png" id="4_pxu8i"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vgqkl")
+
+[node name="Button" type="Button" parent="."]
+visibility_layer = 0
+layout_mode = 0
+offset_left = 13.0
+offset_top = -1.0
+offset_right = 838.0
+offset_bottom = 140.0
+scale = Vector2(1.36, 4.64)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_3t6fy")
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_c8h56")
+
+[node name="TutScreen" type="Sprite2D" parent="."]
+position = Vector2(559, 357)
+scale = Vector2(1.73267, 1.545)
+texture = ExtResource("4_pxu8i")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="finished" from="AudioStreamPlayer" to="." method="_on_audio_stream_player_finished"]

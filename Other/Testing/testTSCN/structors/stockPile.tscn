@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://bkpfg5wyd717u"]
+
+[ext_resource type="Script" path="res://Managers/Sub Managers/BuildingObject.gd" id="1_3bujg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b1amn"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5x5cn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_psti6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3dtri"]
+
+[node name="stockPile" type="Node3D" groups=["building", "stockpile"]]
+script = ExtResource("1_3bujg")
+IronCost = 1
+SpawnActor = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["building"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -0.074173, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = SubResource("BoxMesh_b1amn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/MeshInstance3D"]
+transform = Transform3D(0.409809, 0, 0, 0, 1, 0, 0, 0, 0.333372, 0, -0.892929, 0)
+mesh = SubResource("BoxMesh_5x5cn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0.625074, 0)
+shape = SubResource("BoxShape3D_psti6")
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, 0, 0)
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.623813, 0)
+shape = SubResource("BoxShape3D_3dtri")
+
+[node name="SpawnPoint" type="Marker3D" parent="."]
+transform = Transform3D(52.2961, 0, 0, 0, 45.3512, 0, 0, 0, 46.9719, 0, 0.299456, 0.0225083)

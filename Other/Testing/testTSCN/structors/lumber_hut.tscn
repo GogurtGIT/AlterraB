@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://byp81fb4860si"]
+
+[ext_resource type="Script" path="res://Managers/Sub Managers/BuildingObject.gd" id="1_ku0tb"]
+[ext_resource type="PackedScene" uid="uid://caq5cvl1jet05" path="res://Scenes/baseNPC/LumberJack.tscn" id="2_wvnyq"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_b1amn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_03ij6"]
+albedo_color = Color(0.333333, 0.121569, 0.0862745, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8h57h"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_psti6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8sbtg"]
+
+[node name="lumber_hut" type="Node3D" groups=["building"]]
+script = ExtResource("1_ku0tb")
+WoodCost = 5
+PopCost = 1
+Actor = ExtResource("2_wvnyq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["building"]]
+collision_layer = 2
+collision_mask = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 1.50996e-07, 0, -0.076, 0, -1.50996e-07, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+mesh = SubResource("BoxMesh_b1amn")
+surface_material_override/0 = SubResource("StandardMaterial3D_03ij6")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D/MeshInstance3D"]
+transform = Transform3D(0.390904, 0, 0, 0, 4.12955, 0, 0, 0, 0.405316, -0.258891, -2.76058, 0.118667)
+mesh = SubResource("CylinderMesh_8h57h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0, 0.477857, 0)
+shape = SubResource("BoxShape3D_psti6")
+
+[node name="Area3D" type="Area3D" parent="StaticBody3D"]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, 0, -0.154219, 0)
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D/Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.623813, 0)
+shape = SubResource("BoxShape3D_8sbtg")
+
+[node name="SpawnPoint" type="Marker3D" parent="StaticBody3D"]
+transform = Transform3D(52.2961, 0, 0, 0, 45.3512, 0, 0, 0, 46.9719, 0, 0.299456, 0.00197905)
